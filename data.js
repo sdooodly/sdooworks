@@ -3,7 +3,7 @@ const paintings = [
   // ——— ACRYLIC (14) ———
   {
     title: "Golden Hour",
-    src: "images/acrylic/PXL_20250827_053309506.jpg",
+    src: "images/acrylic/golden-hour-20250827.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '36 × 48 in',
@@ -12,7 +12,7 @@ const paintings = [
   },
   {
     title: "Still Breathing",
-    src: "images/acrylic/PXL_20250827_120930272~2.jpg",
+    src: "images/acrylic/still-breathing-20250827.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '30 × 40 in',
@@ -21,7 +21,7 @@ const paintings = [
   },
   {
     title: "Unfolding",
-    src: "images/acrylic/20250109_093727.jpg",
+    src: "images/acrylic/unfolding-20250109.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '30 × 40 in',
@@ -30,7 +30,7 @@ const paintings = [
   },
   {
     title: "September Glow",
-    src: "images/acrylic/IMG_20180904_185544_225.jpg",
+    src: "images/acrylic/september-glow-20180904.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '24 × 36 in',
@@ -39,7 +39,7 @@ const paintings = [
   },
   {
     title: "Dusk Fragment",
-    src: "images/acrylic/IMG_20180920_194805_982.jpg",
+    src: "images/acrylic/dusk-fragment-20180920.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '30 × 40 in',
@@ -48,7 +48,7 @@ const paintings = [
   },
   {
     title: "Bloom",
-    src: "images/acrylic/IMG_20180415_114911-01.jpeg",
+    src: "images/acrylic/bloom-20180415.jpeg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '24 × 30 in',
@@ -57,7 +57,7 @@ const paintings = [
   },
   {
     title: "Winter Interior",
-    src: "images/acrylic/IMG_20180114_220703_293.jpg",
+    src: "images/acrylic/winter-interior-20180114.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '20 × 24 in',
@@ -66,7 +66,7 @@ const paintings = [
   },
   {
     title: "Soft Ground",
-    src: "images/acrylic/IMG-20181030-WA0003.jpg",
+    src: "images/acrylic/soft-ground-20181030.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '24 × 36 in',
@@ -75,7 +75,7 @@ const paintings = [
   },
   {
     title: "Ember",
-    src: "images/acrylic/IMG-20180927-WA0060.jpg",
+    src: "images/acrylic/ember-20180927.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '24 × 36 in',
@@ -84,7 +84,7 @@ const paintings = [
   },
   {
     title: "Late May",
-    src: "images/acrylic/IMG_20200526_202041.jpg",
+    src: "images/acrylic/late-may-20200526.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '24 × 30 in',
@@ -93,7 +93,7 @@ const paintings = [
   },
   {
     title: "Monsoon Memory",
-    src: "images/acrylic/IMG_20170709_121641-01.jpeg",
+    src: "images/acrylic/monsoon-memory-20170709.jpeg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '20 × 24 in',
@@ -102,7 +102,7 @@ const paintings = [
   },
   {
     title: "Midday Heat",
-    src: "images/acrylic/IMG_20170714_172632-02.jpeg",
+    src: "images/acrylic/midday-heat-20170714.jpeg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '24 × 30 in',
@@ -111,7 +111,7 @@ const paintings = [
   },
   {
     title: "First Marks",
-    src: "images/acrylic/IMG_20170228_211845.jpg",
+    src: "images/acrylic/first-marks-20170228.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '20 × 24 in',
@@ -120,7 +120,7 @@ const paintings = [
   },
   {
     title: "Wandering",
-    src: "images/acrylic/IMG_4722.JPG",
+    src: "images/acrylic/wandering-2017.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '18 × 24 in',
@@ -131,7 +131,7 @@ const paintings = [
   // ——— OIL (6) ———
   {
     title: "Morning Palette",
-    src: "images/oil/20250109_093708.jpg",
+    src: "images/oil/morning-palette-20250109.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '24 × 30 in',
@@ -140,7 +140,7 @@ const paintings = [
   },
   {
     title: "Quiet Corners",
-    src: "images/oil/20250109_093720.jpg",
+    src: "images/oil/quiet-corners-20250109.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '20 × 24 in',
@@ -149,7 +149,7 @@ const paintings = [
   },
   {
     title: "February Light",
-    src: "images/oil/PXL_20250214_120648249.jpg",
+    src: "images/oil/february-light-20250214.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '24 × 36 in',
@@ -158,7 +158,7 @@ const paintings = [
   },
   {
     title: "Spring Residue",
-    src: "images/oil/PXL_20230426_174653725.jpg",
+    src: "images/oil/spring-residue-20230426.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '36 × 48 in',
@@ -167,7 +167,7 @@ const paintings = [
   },
   {
     title: "Morning Ritual",
-    src: "images/oil/IMG_20180511_091945_052.jpg",
+    src: "images/oil/morning-ritual-20180511.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '24 × 30 in',
@@ -176,7 +176,7 @@ const paintings = [
   },
   {
     title: "Passage",
-    src: "images/oil/IMG-20181030-WA0000.jpg",
+    src: "images/oil/passage-20181030.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '30 × 40 in',
@@ -187,7 +187,7 @@ const paintings = [
   // ——— WATERCOLOUR (3) ———
   {
     title: "Lockdown Study",
-    src: "images/watercolour/20200410_195700~2.jpg",
+    src: "images/watercolour/lockdown-study-20200410.jpg",
     medium: "Watercolour on Paper",
     filter: "watercolour",
     size: '14 × 18 in',
@@ -196,7 +196,7 @@ const paintings = [
   },
   {
     title: "Night Study",
-    src: "images/watercolour/IMG_20170127_202538_817.jpg",
+    src: "images/watercolour/night-study-20170127.jpg",
     medium: "Watercolour on Paper",
     filter: "watercolour",
     size: '12 × 16 in',
@@ -205,7 +205,7 @@ const paintings = [
   },
   {
     title: "April Mood",
-    src: "images/watercolour/IMG_20200401_210917.jpg",
+    src: "images/watercolour/april-mood-20200401.jpg",
     medium: "Watercolour on Paper",
     filter: "watercolour",
     size: '14 × 20 in',

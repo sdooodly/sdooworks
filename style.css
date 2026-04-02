@@ -690,7 +690,8 @@ footer {
   font-size: 0.8rem;
 }
 
-.footer-link {
+.footer-link,
+.footer-link:visited {
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.3s;

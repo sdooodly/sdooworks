@@ -4,8 +4,8 @@
 
 (function initParticleEffect() {
   const PARTICLE_SIZE = 4;       // px per particle grid cell
-  const SCATTER_FORCE = 250;     // how far particles fly
-  const SCATTER_ROTATION = 2;    // rotation randomness
+  const SCATTER_FORCE = 180;     // how far particles fly
+  const SCATTER_ROTATION = 1.5;  // rotation randomness
 
   function createParticleCanvas(galleryItem) {
     const img = galleryItem.querySelector('img');
@@ -69,7 +69,7 @@
           rotation: (Math.random() - 0.5) * SCATTER_ROTATION,
           size: PARTICLE_SIZE * (0.6 + Math.random() * 0.8),
           color: `rgba(${r},${g},${b},${a / 255})`,
-          delay: Math.random() * 0.3,
+          delay: Math.random() * 0.5,
         });
       }
     }
@@ -106,7 +106,7 @@
           rotation: (Math.random() - 0.5) * SCATTER_ROTATION,
           size: PARTICLE_SIZE * (0.6 + Math.random() * 0.8),
           color: `rgba(${shade + 100},${shade + 80},${shade + 50},0.8)`,
-          delay: Math.random() * 0.3,
+          delay: Math.random() * 0.5,
         });
       }
     }
@@ -168,16 +168,15 @@
       const rect = item.getBoundingClientRect();
       const center = rect.top + rect.height / 2;
 
-      // Start dissolving when element center passes 80% of viewport
-      // Fully dissolved when center is off-screen (top or bottom)
+      // Start dissolving earlier — wider trigger zone
       let progress = 0;
 
-      if (center < viewH * 0.15) {
-        // Scrolling up past top — dissolve
-        progress = 1 - (center / (viewH * 0.15));
-      } else if (center > viewH * 0.85) {
-        // Scrolling down past bottom — dissolve
-        progress = (center - viewH * 0.85) / (viewH * 0.15);
+      if (center < viewH * 0.4) {
+        // Scrolling up — dissolve starts at 40% from top
+        progress = 1 - (center / (viewH * 0.4));
+      } else if (center > viewH * 0.6) {
+        // Scrolling down — dissolve starts at 60% from top
+        progress = (center - viewH * 0.6) / (viewH * 0.4);
       }
 
       progress = Math.max(0, Math.min(1, progress));

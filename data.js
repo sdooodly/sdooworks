@@ -1,158 +1,215 @@
 // ===== PAINTING DATA =====
-// Replace "src" with your actual image paths when ready.
-// Placeholder function generates a colored SVG so every card has a visible image.
-function placeholder(hue) {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="530">
-    <rect width="400" height="530" fill="hsl(${hue},15%,14%)"/>
-    <rect x="80" y="140" width="240" height="250" rx="4" fill="hsl(${hue},20%,20%)" opacity="0.6"/>
-    <text x="200" y="280" text-anchor="middle" fill="hsl(${hue},30%,40%)" font-family="serif" font-size="18">Your Painting</text>
-  </svg>`;
-  return 'data:image/svg+xml,' + encodeURIComponent(svg);
-}
-
 const paintings = [
+  // ——— ACRYLIC (14) ———
   {
-    title: "Untitled I",
-    src: placeholder(30),
+    title: "Golden Hour",
+    src: "images/acrylic/PXL_20250827_053309506.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '36 × 48 in',
     date: "2025",
-    description: "Description of this piece."
+    description: "A study in warm light and layered texture."
   },
   {
-    title: "Untitled II",
-    src: placeholder(35),
+    title: "Still Breathing",
+    src: "images/acrylic/PXL_20250827_120930272~2.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
     size: '30 × 40 in',
     date: "2025",
-    description: "Description of this piece."
+    description: "Bold strokes exploring movement and stillness."
   },
   {
-    title: "Untitled III",
-    src: placeholder(25),
+    title: "Unfolding",
+    src: "images/acrylic/20250109_093727.jpg",
     medium: "Acrylic on Canvas",
     filter: "acrylic",
-    size: '48 × 60 in',
-    date: "2024",
-    description: "Description of this piece."
-  },
-  {
-    title: "Untitled IV",
-    src: placeholder(40),
-    medium: "Acrylic on Canvas",
-    filter: "acrylic",
-    size: '36 × 36 in',
-    date: "2024",
-    description: "Description of this piece."
-  },
-  {
-    title: "Untitled V",
-    src: placeholder(20),
-    medium: "Acrylic on Canvas",
-    filter: "acrylic",
-    size: '24 × 36 in',
-    date: "2023",
-    description: "Description of this piece."
-  },
-  {
-    title: "Untitled VI",
-    src: placeholder(32),
-    medium: "Acrylic on Canvas",
-    filter: "acrylic",
-    size: '36 × 48 in',
-    date: "2023",
-    description: "Description of this piece."
-  },
-  {
-    title: "Untitled VII",
-    src: placeholder(15),
-    medium: "Oil on Canvas",
-    filter: "oil",
-    size: '24 × 36 in',
+    size: '30 × 40 in',
     date: "2025",
-    description: "Description of this piece."
+    description: "Layers peeling back to reveal something underneath."
   },
   {
-    title: "Untitled VIII",
-    src: placeholder(10),
+    title: "September Glow",
+    src: "images/acrylic/IMG_20180904_185544_225.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '24 × 36 in',
+    date: "2018",
+    description: "Warm autumn hues on a textured ground."
+  },
+  {
+    title: "Dusk Fragment",
+    src: "images/acrylic/IMG_20180920_194805_982.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '30 × 40 in',
+    date: "2018",
+    description: "Fragments of a fading sky."
+  },
+  {
+    title: "Bloom",
+    src: "images/acrylic/IMG_20180415_114911-01.jpeg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '24 × 30 in',
+    date: "2018",
+    description: "Colour bursting through a muted surface."
+  },
+  {
+    title: "Winter Interior",
+    src: "images/acrylic/IMG_20180114_220703_293.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '20 × 24 in',
+    date: "2018",
+    description: "Warm light against cold walls."
+  },
+  {
+    title: "Soft Ground",
+    src: "images/acrylic/IMG-20181030-WA0003.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '24 × 36 in',
+    date: "2018",
+    description: "Earth tones dissolving into canvas."
+  },
+  {
+    title: "Ember",
+    src: "images/acrylic/IMG-20180927-WA0060.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '24 × 36 in',
+    date: "2018",
+    description: "The last glow before it fades."
+  },
+  {
+    title: "Late May",
+    src: "images/acrylic/IMG_20200526_202041.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '24 × 30 in',
+    date: "2020",
+    description: "Soft warmth capturing the end of spring."
+  },
+  {
+    title: "Monsoon Memory",
+    src: "images/acrylic/IMG_20170709_121641-01.jpeg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '20 × 24 in',
+    date: "2017",
+    description: "Rain-soaked impressions on canvas."
+  },
+  {
+    title: "Midday Heat",
+    src: "images/acrylic/IMG_20170714_172632-02.jpeg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '24 × 30 in',
+    date: "2017",
+    description: "Thick impasto capturing summer intensity."
+  },
+  {
+    title: "First Marks",
+    src: "images/acrylic/IMG_20170228_211845.jpg",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '20 × 24 in',
+    date: "2017",
+    description: "Early explorations — raw and honest."
+  },
+  {
+    title: "Wandering",
+    src: "images/acrylic/IMG_4722.JPG",
+    medium: "Acrylic on Canvas",
+    filter: "acrylic",
+    size: '18 × 24 in',
+    date: "2017",
+    description: "Loose brushwork following no particular path."
+  },
+
+  // ——— OIL (6) ———
+  {
+    title: "Morning Palette",
+    src: "images/oil/20250109_093708.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '24 × 30 in',
-    date: "2024",
-    description: "Description of this piece."
+    date: "2025",
+    description: "An exploration of colour at first light."
   },
   {
-    title: "Untitled IX",
-    src: placeholder(18),
+    title: "Quiet Corners",
+    src: "images/oil/20250109_093720.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '20 × 24 in',
-    date: "2024",
-    description: "Description of this piece."
+    date: "2025",
+    description: "Intimate spaces rendered in rich oil tones."
   },
   {
-    title: "Untitled X",
-    src: placeholder(8),
+    title: "February Light",
+    src: "images/oil/PXL_20250214_120648249.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
-    size: '30 × 40 in',
-    date: "2023",
-    description: "Description of this piece."
+    size: '24 × 36 in',
+    date: "2025",
+    description: "Soft winter tones captured in oil."
   },
   {
-    title: "Untitled XI",
-    src: placeholder(22),
+    title: "Spring Residue",
+    src: "images/oil/PXL_20230426_174653725.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
-    size: '40 × 50 in',
+    size: '36 × 48 in',
     date: "2023",
-    description: "Description of this piece."
+    description: "What remains after the season turns."
   },
   {
-    title: "Untitled XII",
-    src: placeholder(12),
+    title: "Morning Ritual",
+    src: "images/oil/IMG_20180511_091945_052.jpg",
     medium: "Oil on Canvas",
     filter: "oil",
     size: '24 × 30 in',
-    date: "2022",
-    description: "Description of this piece."
+    date: "2018",
+    description: "Quiet contemplation in warm oil tones."
   },
   {
-    title: "Untitled XIII",
-    src: placeholder(200),
+    title: "Passage",
+    src: "images/oil/IMG-20181030-WA0000.jpg",
+    medium: "Oil on Canvas",
+    filter: "oil",
+    size: '30 × 40 in',
+    date: "2018",
+    description: "A threshold between two states."
+  },
+
+  // ——— WATERCOLOUR (3) ———
+  {
+    title: "Lockdown Study",
+    src: "images/watercolour/20200410_195700~2.jpg",
     medium: "Watercolour on Paper",
     filter: "watercolour",
-    size: '18 × 24 in',
-    date: "2025",
-    description: "Description of this piece."
+    size: '14 × 18 in',
+    date: "2020",
+    description: "Painted during a time of stillness and reflection."
   },
   {
-    title: "Untitled XIV",
-    src: placeholder(210),
+    title: "Night Study",
+    src: "images/watercolour/IMG_20170127_202538_817.jpg",
     medium: "Watercolour on Paper",
     filter: "watercolour",
     size: '12 × 16 in',
-    date: "2024",
-    description: "Description of this piece."
+    date: "2017",
+    description: "Dark tones and quiet energy on wet paper."
   },
   {
-    title: "Untitled XV",
-    src: placeholder(190),
+    title: "April Mood",
+    src: "images/watercolour/IMG_20200401_210917.jpg",
     medium: "Watercolour on Paper",
     filter: "watercolour",
     size: '14 × 20 in',
-    date: "2024",
-    description: "Description of this piece."
-  },
-  {
-    title: "Untitled XVI",
-    src: placeholder(220),
-    medium: "Watercolour on Paper",
-    filter: "watercolour",
-    size: '16 × 22 in',
-    date: "2023",
-    description: "Description of this piece."
+    date: "2020",
+    description: "A moody piece born from quiet evenings."
   }
 ];

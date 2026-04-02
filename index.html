@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sdooodly — Art Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Sdooodly</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#gallery">Works</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Sdooodly</h1>
+      <p class="hero-subtitle">Acrylic &amp; Oil on Canvas</p>
+      <a href="#gallery" class="hero-cta">View Works</a>
+    </div>
+    <div class="scroll-indicator"><span></span></div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="section-title">Selected Works</h2>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="acrylic">Acrylic</button>
+      <button class="filter-btn" data-filter="oil">Oil</button>
+      <button class="filter-btn" data-filter="watercolour">Watercolour</button>
+    </div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </section>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Painting detail view">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-prev" aria-label="Previous painting">&#8249;</button>
+    <button class="lightbox-next" aria-label="Next painting">&#8250;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img" />
+      <div class="lightbox-info" id="lightbox-info">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-medium"></p>
+        <p id="lightbox-size"></p>
+        <p id="lightbox-date"></p>
+        <p id="lightbox-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=350&h=450&fit=crop" alt="Sdooodly — artist portrait" style="width:350px;height:450px;object-fit:cover;" />
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">About</h2>
+        <p>
+          Hi, I'm Sdooodly — a self-taught painter working primarily in acrylic, oil, and watercolour on canvas.
+          I'm drawn to colour, texture, and the quiet moments between brushstrokes.
+        </p>
+        <p>
+          Painting is how I make sense of things. Each piece starts as a feeling and slowly finds its shape
+          on canvas. I love the unpredictability of oil, the boldness of acrylic, and the softness of watercolour.
+        </p>
+        <p>
+          When I'm not painting, I teach small workshops for anyone curious about picking up a brush.
+          Feel free to reach out — I'd love to connect.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="classes">
+    <h2 class="section-title">Classes &amp; Workshops</h2>
+    <p class="classes-blurb">
+      I offer private and small group sessions in acrylic, oil, and watercolour painting.
+      Whether you're a complete beginner or looking to refine your technique, I'd love to work with you.
+    </p>
+    <p class="classes-blurb">
+      I also run summer painting classes for kids — a fun, relaxed way for young ones to explore
+      colour and creativity on canvas.
+    </p>
+    <p class="classes-blurb">
+      Reach out through the <a href="#contact" class="inline-link">contact form</a> below for availability, pricing, and details.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p class="contact-subtitle">For inquiries about paintings, commissions, or classes</p>
+    <div class="contact-options">
+      <a href="https://wa.me/919497692789" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon">💬</span>
+        <h3>WhatsApp</h3>
+        <p>Message me directly for a quick chat</p>
+      </a>
+    </div>
+    <form class="contact-form" id="contact-form" autocomplete="on">
+      <h3 class="form-heading">Or send an inquiry</h3>
+      <div class="form-group">
+        <label for="cf-name">Name <span class="required">*</span></label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name" />
+      </div>
+      <div class="form-group">
+        <label for="cf-whatsapp">WhatsApp Number <span class="required">*</span></label>
+        <input type="tel" id="cf-whatsapp" name="whatsapp" required autocomplete="tel" />
+      </div>
+      <div class="form-group">
+        <label for="cf-details">Attendee Details</label>
+        <textarea id="cf-details" name="details" rows="4"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <p class="form-status" id="form-status"></p>
+    </form>
+    <!-- Hidden iframe for Google Form submission -->
+    <iframe name="hidden-form-iframe" id="hidden-form-iframe" style="display:none;" aria-hidden="true"></iframe>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Sdooodly. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/sdooodly" aria-label="Instagram">Instagram</a>
+        <a href="https://behance.net/sdooodly" aria-label="Behance">Behance</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script src="particle-effect.js"></script>
+</body>
+</html>

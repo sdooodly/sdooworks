@@ -241,9 +241,9 @@ document.addEventListener('keydown', (e) => {
 // 3. Find the <input> or <textarea> with name="entry.XXXXXXX"
 // 4. Replace the values below with your actual entry IDs
 const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSdUzyzBa7JdCKccyH2joy7cLqOfV5ZdDQ0g8ZxfVnhojLv0Dg/formResponse';
-const ENTRY_NAME = 'entry.826355120';
-const ENTRY_WHATSAPP = 'entry.1912639863';
-const ENTRY_DETAILS = 'entry.511796578';
+const ENTRY_NAME = 'entry.2092238618';
+const ENTRY_WHATSAPP = 'entry.931322105';
+const ENTRY_DETAILS = 'entry.1990198081';
 
 document.getElementById('contact-form').addEventListener('submit', (e) => {
   e.preventDefault();

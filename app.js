@@ -9,8 +9,9 @@
   const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100);
   camera.position.z = 30;
 
-  // Floating paint particles
-  const particleCount = 120;
+  // Floating paint particles — fewer on mobile
+  const isMobile = window.innerWidth < 768;
+  const particleCount = isMobile ? 40 : 120;
   const geometry = new THREE.BufferGeometry();
   const positions = new Float32Array(particleCount * 3);
   const colors = new Float32Array(particleCount * 3);

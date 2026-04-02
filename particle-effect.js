@@ -3,6 +3,9 @@
 // particles that scatter as the element scrolls out of view.
 
 (function initParticleEffect() {
+  // Disable on mobile/tablet — too intense for small screens and touch scrolling
+  if (window.innerWidth < 900 || 'ontouchstart' in window) return;
+
   const PARTICLE_SIZE = 4;       // px per particle grid cell
   const SCATTER_FORCE = 180;     // how far particles fly
   const SCATTER_ROTATION = 1.5;  // rotation randomness

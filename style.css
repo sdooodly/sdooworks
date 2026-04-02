@@ -690,6 +690,16 @@ footer {
   font-size: 0.8rem;
 }
 
+.footer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: var(--accent);
+}
+
 .social-links {
   display: flex;
   gap: 1.5rem;

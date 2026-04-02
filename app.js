@@ -270,7 +270,6 @@ document.getElementById('contact-form').addEventListener('submit', (e) => {
   formData.append(ENTRY_DETAILS, details);
 
   // Submit via hidden iframe to avoid CORS issues
-  const iframe = document.getElementById('hidden-form-iframe');
   const tempForm = document.createElement('form');
   tempForm.method = 'POST';
   tempForm.action = GOOGLE_FORM_ACTION;
